@@ -403,3 +403,100 @@
 2021-02-22 00:22:05,411 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: UnRegisterSessionRequestPacket(message=[])
 2021-02-22 00:22:05,411 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: UnRegisterSessionResponsePacket()
 2021-02-22 00:22:05,411 [INFO] pycomm3.cip_driver.CIPDriver._un_register_session(): Session Unregistered
+2021-02-23 00:07:44,454 [DEBUG] pycomm3.cip_driver.CIPDriver.open(): Opening connection to 192.168.1.101
+2021-02-23 00:07:44,457 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 65 00 04 00 00 00 00 00 00 00 00 00 5f 70 79 63     e•••••••••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 01 00 00 00                 omm_••••••••
+2021-02-23 00:07:44,457 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: RegisterSessionRequestPacket(message=[b'\x01\x00', b'\x00\x00'])
+2021-02-23 00:07:44,508 [VERBOSE] pycomm3.cip_driver.CIPDriver._receive(): <<< RECEIVE <<< 
+(0000) 65 00 04 00 05 a7 da 37 00 00 00 00 5f 70 79 63     e••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 01 00 00 00                 omm_••••••••
+2021-02-23 00:07:44,508 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: RegisterSessionResponsePacket(session=937076485, error=None)
+2021-02-23 00:07:44,508 [INFO] pycomm3.cip_driver.CIPDriver._register_session(): Session=937076485 has been registered.
+2021-02-23 00:07:44,509 [INFO] pycomm3.cip_driver.wrapped(): Attempting an Extended Forward Open...
+2021-02-23 00:07:44,509 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Sending generic message: forward_open
+2021-02-23 00:07:44,509 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 6f 00 44 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o•D••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 0a 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 34 00 5b 02 20 06 24 01 0a 05     ••••••4•[• •$•••
+(0030) 00 00 00 00 6d 66 df 87 27 04 09 10 3d 3f 84 f0     ••••mf••'•••=?••
+(0040) 07 00 00 00 01 40 20 00 a0 0f 00 42 01 40 20 00     •••••@ ••••B•@ •
+(0050) a0 0f 00 42 a3 03 01 00 20 02 24 01                 •••B•••• •$•
+2021-02-23 00:07:44,509 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: GenericUnconnectedRequestPacket(message=[b'[', b'\x02 \x06$\x01', b"\n\x05\x00\...\x0f\x00B\xa3", b'\x03\x01\x00 \x02$\x01'])
+2021-02-23 00:07:44,555 [VERBOSE] pycomm3.cip_driver.CIPDriver._receive(): <<< RECEIVE <<< 
+(0000) 6f 00 14 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 00 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 04 00 db 00 08 00                 ••••••••••••
+2021-02-23 00:07:44,555 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: GenericUnconnectedResponsePacket(service=None, command=b'o\x00', error='Service not supported - No Extended Status')
+2021-02-23 00:07:44,555 [ERROR] pycomm3.cip_driver.CIPDriver.generic_message(): Generic message 'forward_open' failed: Service not supported - No Extended Status
+2021-02-23 00:07:44,555 [ERROR] pycomm3.cip_driver.CIPDriver._forward_open(): forward_open failed - Service not supported - No Extended Status
+2021-02-23 00:07:44,555 [INFO] pycomm3.cip_driver.wrapped(): Extended Forward Open failed, attempting standard Forward Open.
+2021-02-23 00:07:44,555 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Sending generic message: forward_open
+2021-02-23 00:07:44,555 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 6f 00 40 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o•@••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 0a 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 30 00 54 02 20 06 24 01 0a 05     ••••••0•T• •$•••
+(0030) 00 00 00 00 6d 66 df 87 27 04 09 10 3d 3f 84 f0     ••••mf••'•••=?••
+(0040) 07 00 00 00 01 40 20 00 f4 43 01 40 20 00 f4 43     •••••@ ••C•@ ••C
+(0050) a3 03 01 00 20 02 24 01                             •••• •$•
+2021-02-23 00:07:44,556 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: GenericUnconnectedRequestPacket(message=[b'T', b'\x02 \x06$\x01', b"\n\x05\x00\...\x00\xf4C\xa3", b'\x03\x01\x00 \x02$\x01'])
+2021-02-23 00:07:44,605 [VERBOSE] pycomm3.cip_driver.CIPDriver._receive(): <<< RECEIVE <<< 
+(0000) 6f 00 2e 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o•.••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 00 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 1e 00 d4 00 00 00 9c da a7 05     ••••••••••••••••
+(0030) 6d 66 df 87 27 04 09 10 3d 3f 84 f0 e8 3d 20 00     mf••'•••=?•••= •
+(0040) e8 3d 20 00 00 00                                   •= •••
+2021-02-23 00:07:44,605 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: GenericUnconnectedResponsePacket(service=None, command=b'o\x00', error=None)
+2021-02-23 00:07:44,605 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Generic message 'forward_open' completed
+2021-02-23 00:07:44,606 [INFO] pycomm3.cip_driver.CIPDriver._forward_open(): Forward Open succeeded. Target CID=b'\x9c\xda\xa7\x05'
+2021-02-23 00:07:44,606 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Sending generic message: Temperature
+2021-02-23 00:07:44,606 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 70 00 1e 00 05 a7 da 37 00 00 00 00 5f 70 79 63     p••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 0a 00 02 00     omm_••••••••••••
+(0020) a1 00 04 00 9c da a7 05 b1 00 0a 00 01 00 0e 03     ••••••••••••••••
+(0030) 20 f6 24 14 30 65                                    •$•0e
+2021-02-23 00:07:44,606 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: GenericConnectedRequestPacket(message=[b'\x01\x00', b'\x0e', b'\x03 \xf6$\x140e', b''])
+2021-02-23 00:07:44,655 [VERBOSE] pycomm3.cip_driver.CIPDriver._receive(): <<< RECEIVE <<< 
+(0000) 70 00 1b 00 05 a7 da 37 00 00 00 00 5f 70 79 63     p••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 00 00 02 00     omm_••••••••••••
+(0020) a1 00 04 00 6d 66 df 87 b1 00 07 00 01 00 8e 00     ••••mf••••••••••
+(0030) 00 00 00                                            •••
+2021-02-23 00:07:44,656 [ERROR] pycomm3.packets.cip.GenericConnectedResponsePacket._parse_reply(): Failed to parse reply
+Traceback (most recent call last):
+  File "/home/colton/Code/Stratix_Testing/pycomm3_1.0.0_BETA/lib/python3.8/site-packages/pycomm3/cip/data_types.py", line 115, in decode
+    return cls._decode(stream)
+  File "/home/colton/Code/Stratix_Testing/pycomm3_1.0.0_BETA/lib/python3.8/site-packages/pycomm3/cip/data_types.py", line 273, in _decode
+    str_len = cls.len_type.decode(stream)
+AttributeError: 'NoneType' object has no attribute 'decode'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/colton/Code/Stratix_Testing/pycomm3_1.0.0_BETA/lib/python3.8/site-packages/pycomm3/packets/cip.py", line 49, in _parse_reply
+    self.value = self.data_type.decode(self.data)
+  File "/home/colton/Code/Stratix_Testing/pycomm3_1.0.0_BETA/lib/python3.8/site-packages/pycomm3/cip/data_types.py", line 120, in decode
+    raise DataError(f'Error unpacking {_repr(buffer)} as {cls.__name__}') from err
+pycomm3.exceptions.DataError: Error unpacking b'\x00' as StringDataType
+2021-02-23 00:07:44,657 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: GenericConnectedResponsePacket(service=b'\x0e', command=b'p\x00', error="Failed to parse reply - Error unpacking b'\\x00' as StringDataType")
+2021-02-23 00:07:44,657 [ERROR] pycomm3.cip_driver.CIPDriver.generic_message(): Generic message 'Temperature' failed: Failed to parse reply - Error unpacking b'\x00' as StringDataType
+2021-02-23 00:07:44,657 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Sending generic message: forward_close
+2021-02-23 00:07:44,657 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 6f 00 28 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o•(••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 0a 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 18 00 4e 02 20 06 24 01 0a 05     ••••••••N• •$•••
+(0030) 27 04 09 10 3d 3f 84 f0 03 00 01 00 20 02 24 01     '•••=?•••••• •$•
+2021-02-23 00:07:44,658 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: GenericUnconnectedRequestPacket(message=[b'N', b'\x02 \x06$\x01', b"\n\x05'\x04\t\x10=?\x84\xf0", b'\x03\x00\x01\x00 \x02$\x01'])
+2021-02-23 00:07:44,709 [VERBOSE] pycomm3.cip_driver.CIPDriver._receive(): <<< RECEIVE <<< 
+(0000) 6f 00 1e 00 05 a7 da 37 00 00 00 00 5f 70 79 63     o••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00 00 00 00 00 00 00 02 00     omm_••••••••••••
+(0020) 00 00 00 00 b2 00 0e 00 ce 00 00 00 27 04 09 10     ••••••••••••'•••
+(0030) 3d 3f 84 f0 00 00                                   =?••••
+2021-02-23 00:07:44,710 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: GenericUnconnectedResponsePacket(service=b'N', command=b'o\x00', error=None)
+2021-02-23 00:07:44,710 [INFO] pycomm3.cip_driver.CIPDriver.generic_message(): Generic message 'forward_close' completed
+2021-02-23 00:07:44,710 [INFO] pycomm3.cip_driver.CIPDriver._forward_close(): Forward Close succeeded.
+2021-02-23 00:07:44,710 [VERBOSE] pycomm3.cip_driver.CIPDriver._send(): >>> SEND >>> 
+(0000) 66 00 00 00 05 a7 da 37 00 00 00 00 5f 70 79 63     f••••••7••••_pyc
+(0010) 6f 6d 6d 5f 00 00 00 00                             omm_••••
+2021-02-23 00:07:44,711 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Sent: UnRegisterSessionRequestPacket(message=[])
+2021-02-23 00:07:44,711 [DEBUG] pycomm3.cip_driver.CIPDriver.send(): Received: UnRegisterSessionResponsePacket()
+2021-02-23 00:07:44,711 [INFO] pycomm3.cip_driver.CIPDriver._un_register_session(): Session Unregistered

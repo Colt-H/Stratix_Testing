@@ -40,3 +40,39 @@
 2021-02-22 22:10:27,801 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
 2021-02-22 22:10:28,803 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
 2021-02-22 22:10:29,881 [INFO] pycomm3.cip_driver.CIPDriver.discover(): No Ethernet/IP devices discovered
+2021-02-22 22:19:46,982 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:19:46,985 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:19:47,987 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:19:48,989 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:19:49,991 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:19:51,085 [INFO] pycomm3.cip_driver.CIPDriver.discover(): No Ethernet/IP devices discovered
+2021-02-22 22:21:06,740 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:21:06,742 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover IS THIS WORKING for IP: 127.0.1.1
+2021-02-22 22:21:07,744 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover IS THIS WORKING for IP: 127.0.1.1
+2021-02-22 22:21:08,745 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover IS THIS WORKING for IP: 127.0.1.1
+2021-02-22 22:21:09,747 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:21:10,837 [INFO] pycomm3.cip_driver.CIPDriver.discover(): No Ethernet/IP devices discovered
+2021-02-22 22:26:41,673 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:26:41,674 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:26:42,676 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:26:43,677 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:26:44,679 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:26:45,741 [INFO] pycomm3.cip_driver.CIPDriver.discover(): No Ethernet/IP devices discovered
+2021-02-22 22:28:20,647 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:28:20,652 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:28:21,653 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:28:22,655 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:28:23,656 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:28:24,745 [INFO] pycomm3.cip_driver.CIPDriver.discover(): No Ethernet/IP devices discovered
+2021-02-22 22:30:49,435 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:30:49,436 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:30:50,437 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:30:51,439 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:30:52,441 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:30:52,498 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovered 1 device(s)
+2021-02-22 22:41:33,244 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovering devices...
+2021-02-22 22:41:33,246 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:41:34,248 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:41:35,249 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): Broadcasting discover for IP: 127.0.1.1
+2021-02-22 22:41:36,250 [DEBUG] pycomm3.cip_driver.CIPDriver.discover(): No devices found so far, attempting broadcast without binding to an IP.
+2021-02-22 22:41:36,306 [INFO] pycomm3.cip_driver.CIPDriver.discover(): Discovered 1 device(s)
